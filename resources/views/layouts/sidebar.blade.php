@@ -7,6 +7,10 @@
                                 Dashboard
                             </a>
                             <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#">
+                                <div class="sb-nav-link-icon"><i class="fas fa-qrcode"></i>&nbsp;
+                                Scan Case
+                            </a>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Master Case
@@ -14,7 +18,7 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{url('/casemaster')}}">Case Master &nbsp;
+                                    <a class="nav-link" href="{{url('/casemaster')}}">Master Case&nbsp;
                                         <span class="badge badge-info right">6</span>
                                     </a>
                                 </nav>
@@ -38,11 +42,11 @@
                                         Picking &nbsp;
                                         <span class="badge badge-info right">6</span>
                                     </a>
-                                    <a class="nav-link collapsed" href="#">
+                                    <a class="nav-link collapsed" href="{{url('/packing')}}">
                                         Packing &nbsp;
                                         <span class="badge badge-info right">6</span>
                                     </a>
-                                    <a class="nav-link collapsed" href="#">
+                                    <a class="nav-link collapsed" href="{{url('/export')}}">
                                         Export &nbsp;
                                         <span class="badge badge-info right">6</span>
                                     </a>

@@ -58,4 +58,18 @@ class HomeController extends Controller
 
         return view('content.picking',compact('picking'));
     }
+
+    public function packing()
+    {
+        $packing = \App\CaseModel::where('status','4')->get();
+
+        return view('content.packing',compact('packing'));
+    }
+
+    public function export()
+    {
+        $export = \App\CaseModel::where('status','5')->get();
+
+        return view('content.export',compact('export'));
+    }
 }

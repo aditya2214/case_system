@@ -26,6 +26,8 @@ Route::get('/casemaster','HomeController@casemaster');
 Route::get('/receiving','HomeController@receiving');
 Route::get('/inprogres','HomeController@inprogres');
 Route::get('/picking','HomeController@picking');
+Route::get('/packing','HomeController@packing');
+Route::get('/export','HomeController@export');
 
 Auth::routes();
 

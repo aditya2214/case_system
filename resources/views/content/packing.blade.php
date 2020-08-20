@@ -19,7 +19,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($receiving as $case)
+                    @foreach($packing as $case)
                     <tr>
                         <td>{{$case->case_number }}</td>
                         <td>{{$case->color}}</td>
