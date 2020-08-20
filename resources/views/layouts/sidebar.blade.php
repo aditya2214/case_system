@@ -19,7 +19,7 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="{{url('/casemaster')}}">Master Case&nbsp;
-                                        <span class="badge badge-info right">6</span>
+                                        <span class="badge badge-info right">{{$casemodel}}</span>
                                     </a>
                                 </nav>
                             </div>
@@ -32,30 +32,30 @@
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="{{url('/receiving')}}">
                                         Receiving &nbsp;
-                                        <span class="badge badge-info right">6</span>
+                                        <span class="badge badge-info right">{{$receiving}}</span>
                                     </a>
                                     <a class="nav-link collapsed" href="{{url('/inprogres')}}">
                                         in Progres &nbsp;
-                                        <span class="badge badge-info right">6</span>
+                                        <span class="badge badge-info right">{{$inprogres}}</span>
                                     </a>
                                     <a class="nav-link collapsed" href="{{url('/picking')}}">
                                         Picking &nbsp;
-                                        <span class="badge badge-info right">6</span>
+                                        <span class="badge badge-info right">{{$picking}}</span>
                                     </a>
                                     <a class="nav-link collapsed" href="{{url('/packing')}}">
                                         Packing &nbsp;
-                                        <span class="badge badge-info right">6</span>
+                                        <span class="badge badge-info right">{{$packing}}</span>
                                     </a>
                                     <a class="nav-link collapsed" href="{{url('/export')}}">
                                         Export &nbsp;
-                                        <span class="badge badge-info right">6</span>
+                                        <span class="badge badge-info right">{{$export}}</span>
                                     </a>
                                 </nav>
                             </div>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="{{url('/ng')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                     NG Case &nbsp;
-                                    <span class="badge badge-info right">6</span>
+                                    <span class="badge badge-info right">{{$ng}}</span>
                             </a>
                         </div>
                     </div>

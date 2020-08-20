@@ -28,6 +28,7 @@ Route::get('/inprogres','HomeController@inprogres');
 Route::get('/picking','HomeController@picking');
 Route::get('/packing','HomeController@packing');
 Route::get('/export','HomeController@export');
+Route::get('/ng','HomeController@ng');
 
 Auth::routes();
 

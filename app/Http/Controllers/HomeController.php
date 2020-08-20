@@ -40,36 +40,42 @@ class HomeController extends Controller
 
     public function receiving()
     {
-        $receiving = \App\CaseModel::where('status','1')->get();
+        $receiving = \App\CaseModel::where('status','0')->get();
 
         return view('content.receiving',compact('receiving'));
     }
 
     public function inprogres()
     {
-        $inprogres = \App\CaseModel::where('status','2')->get();
+        $inprogres = \App\CaseModel::where('status','1')->get();
 
         return view('content.inprogres',compact('inprogres'));
     }
 
     public function picking()
     {
-        $picking = \App\CaseModel::where('status','3')->get();
+        $picking = \App\CaseModel::where('status','2')->get();
 
         return view('content.picking',compact('picking'));
     }
 
     public function packing()
     {
-        $packing = \App\CaseModel::where('status','4')->get();
+        $packing = \App\CaseModel::where('status','3')->get();
 
         return view('content.packing',compact('packing'));
     }
 
     public function export()
     {
-        $export = \App\CaseModel::where('status','5')->get();
+        $export = \App\CaseModel::where('status','4')->get();
 
         return view('content.export',compact('export'));
+    }
+
+    public function ng(){
+        $ng = \App\CaseModel::where('status','5')->get();
+
+        return view('content.ng',compact('ng'));
     }
 }
